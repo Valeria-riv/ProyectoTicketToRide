@@ -29,11 +29,13 @@ void Tablero::generarTablero() {
 	tablero[ {1, 4}].texto = "D";
 	tablero[ {4, 6}].texto = "E";
 	tablero[ {8, 6}].texto = "F";
+	tablero[ {12, 6}].texto = "G";
 	tablero[ {8, 9}].texto = "H";
 	tablero[ {5, 10}].texto = "I";
 	tablero[ {2, 11}].texto = "J";
 	tablero[ {8, 12}].texto = "K";
 	tablero[ {12, 12}].texto = "L";
+	tablero[ {14, 13}].texto = "M";
 	tablero[ {2, 14}].texto = "N";
 	tablero[ {4, 16}].texto = "O";
 	tablero[ {8, 16}].texto = "P";
