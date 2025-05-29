@@ -1,10 +1,23 @@
+#include "Juego.h"
 #include <iostream>
-#include "Tablero.h"
+
 using namespace std;
 
 int main() {
-    Tablero tab;
-    tab.generarTablero();  
-    tab.mostrar();
+    try {
+        cout << "=== JUEGO DE TRENES ===\n";
+        cout << "Cuantos jugadores? (2-4): ";
+        int numJugadores;
+        cin >> numJugadores;
+        
+        Juego juego(numJugadores);
+        juego.comenzar();
+        
+    } catch(const exception& e) {
+        cerr << "Error: " << e.what() << endl;
+        return 1;
+    }
+    
+    cout << "\nGracias por jugar!\n";
     return 0;
 }
